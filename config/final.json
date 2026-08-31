@@ -1,0 +1,41 @@
+{
+  "schema_version": "dlc2026-final-base-n16-cascade.v1",
+  "method": "base_majority_n16",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "model_artifact_sha256": "358b5b70a11ed13a57002d1468336d63bb9019ee3cdd4ca4363c85e8a6f3ab5a",
+  "expected_precision": "bf16",
+  "prompt_version": "baseline-v2",
+  "rollouts": 16,
+  "seeds": [
+    20260811,
+    20260812,
+    20260813,
+    20260814,
+    20260815,
+    20260816,
+    20260817,
+    20260818,
+    20260819,
+    20260820,
+    20260821,
+    20260822,
+    20260823,
+    20260824,
+    20260825,
+    20260826
+  ],
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "batch_size": 128,
+  "queue_size": 128,
+  "prefill_batch_size": 4,
+  "generation_budgets": [
+    1024,
+    4096,
+    8192
+  ],
+  "fallback_answer": 0,
+  "retry_policy": "capped-no-explicit-answer",
+  "aggregation": "valid-answer-majority-stable-first-tie"
+}
